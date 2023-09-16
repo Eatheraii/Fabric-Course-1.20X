@@ -30,6 +30,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.NETHER_PINK_GARNET_ORE);
                         entries.add(ModBlocks.PINK_GARNET_ORE);
 
+                        entries.add(ModBlocks.SOUND_BLOCK);
+
 /*
 */
                     }).build());

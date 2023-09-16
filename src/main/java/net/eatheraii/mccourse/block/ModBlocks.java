@@ -1,6 +1,7 @@
 package net.eatheraii.mccourse.block;
 
 import net.eatheraii.mccourse.MCCourseMod;
+import net.eatheraii.mccourse.block.custom.SoundBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -34,6 +35,10 @@ public class ModBlocks {
 
     public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE), UniformIntProvider.create(3,6)));
+
+    //sound block
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
 
     //register associated item
     private static Item registerBlockItem(String name, Block block){
