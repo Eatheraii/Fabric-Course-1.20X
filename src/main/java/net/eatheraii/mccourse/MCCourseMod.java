@@ -1,6 +1,7 @@
 package net.eatheraii.mccourse;
 
 import net.eatheraii.mccourse.block.ModBlocks;
+import net.eatheraii.mccourse.item.ModItemGroup;
 import net.eatheraii.mccourse.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,5 +17,6 @@ public class MCCourseMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItemGroup.registerItemGroups();
 	}
 }
