@@ -24,6 +24,10 @@ public class ModItems {
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
 
+    //cauliflower
+    public static final Item CAULIFLOWER = registerItem("cauliflower",
+            new Item(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER)));
+
     private static Item registerItem(String name, Item item){
         //registering an item, do it like this
         return Registry.register(Registries.ITEM, new Identifier(MCCourseMod.MOD_ID, name), item);
