@@ -27,6 +27,9 @@ public class ModItems {
     //cauliflower
     public static final Item CAULIFLOWER = registerItem("cauliflower",
             new Item(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER)));
+    //fuel peat brick
+    public static final Item PEAT_BRICK = registerItem("peat_brick",
+            new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item){
         //registering an item, do it like this

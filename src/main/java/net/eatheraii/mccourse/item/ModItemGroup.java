@@ -32,6 +32,7 @@ public class ModItemGroup {
 
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.PEAT_BRICK);
 
 /*
 */

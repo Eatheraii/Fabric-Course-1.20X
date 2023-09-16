@@ -3,6 +3,7 @@ package net.eatheraii.mccourse;
 import net.eatheraii.mccourse.block.ModBlocks;
 import net.eatheraii.mccourse.item.ModItemGroup;
 import net.eatheraii.mccourse.item.ModItems;
+import net.eatheraii.mccourse.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,5 +19,7 @@ public class MCCourseMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroup.registerItemGroups();
+
+		ModRegistries.registerModStuffs();
 	}
 }
