@@ -2,6 +2,7 @@ package net.eatheraii.mccourse.item;
 
 import net.eatheraii.mccourse.MCCourseMod;
 import net.eatheraii.mccourse.block.ModBlocks;
+import net.eatheraii.mccourse.item.custom.MetalDetectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -18,6 +19,10 @@ public class ModItems {
     //add a SECOND ITEM
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet",
             new Item(new FabricItemSettings()));
+
+    //adding metal detector
+    public static final Item METAL_DETECTOR = registerItem("metal_detector",
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
 
     private static Item registerItem(String name, Item item){
         //registering an item, do it like this
