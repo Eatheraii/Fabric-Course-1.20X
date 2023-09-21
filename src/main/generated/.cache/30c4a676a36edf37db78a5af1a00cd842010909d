@@ -1,5 +1,8 @@
-// 1.20.1	2023-09-21T18:21:51.5529953	MC Course/Tags for minecraft:block
+// 1.20.1	2023-09-21T18:35:36.8705311	MC Course/Tags for minecraft:block
 78b821323f95d2a39da78c8e495f9ea41951b6f0 data\mccourse\tags\blocks\metal_detector_detectable_blocks.json
 cac54469142d24a8401f95e0fb8d26528f2f0f9d data\minecraft\tags\blocks\needs_iron_tool.json
+054139939470485ffcc4479b643d9d6e0f51496d data\minecraft\tags\blocks\fences.json
+517632cca94e9946eb0ffa70b9c76633dbe1cf71 data\minecraft\tags\blocks\walls.json
+44c98cbccbbe6c963068d9855497e95103c11746 data\minecraft\tags\blocks\fence_gates.json
 88a477c94bf794618f586a66f25f2a741a85a42c data\minecraft\tags\blocks\needs_diamond_tool.json
-aa3f3be6cfb7aadc26acf7b540e8869ac8d6c992 data\minecraft\tags\blocks\mineable\pickaxe.json
+5812c8b08ac9fb606119b62119bc570f4031b85b data\minecraft\tags\blocks\mineable\pickaxe.json
