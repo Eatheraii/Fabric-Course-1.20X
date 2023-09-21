@@ -44,6 +44,14 @@ public class ModBlocks {
     public static final Block PINK_GARNET_SLAB = registerBlock("pink_garnet_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
 
+    //button and trap door
+    //button parameters - settings, block set type, integer ticks for how long stays pressed, checks whether can hit with projectile
+    public static final Block PINK_GARNET_BUTTON = registerBlock("pink_garnet_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON), BlockSetType.IRON, 10, true));
+    //plate parameters - action rule (like can mobs trigger it etc), settings, block set type
+    public static final Block PINK_GARNET_PRESSURE_PLATE = registerBlock("pink_garnet_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE), BlockSetType.IRON));
+
     //register associated item
     private static Item registerBlockItem(String name, Block block){
         return Registry.register(Registries.ITEM, new Identifier(MCCourseMod.MOD_ID, name),

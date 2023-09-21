@@ -2,6 +2,7 @@ package net.eatheraii.mccourse.item;
 
 import net.eatheraii.mccourse.MCCourseMod;
 import net.eatheraii.mccourse.block.ModBlocks;
+import net.eatheraii.mccourse.datagen.ModBlockTagProvider;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -36,6 +37,9 @@ public class ModItemGroup {
 
                         entries.add(ModBlocks.PINK_GARNET_STAIRS);
                         entries.add(ModBlocks.PINK_GARNET_SLAB);
+
+                        entries.add(ModBlocks.PINK_GARNET_BUTTON);
+                        entries.add(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
 
 /*
 */
