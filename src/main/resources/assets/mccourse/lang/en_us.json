@@ -15,5 +15,8 @@
   "item.mccourse.cauliflower": "Cauliflower",
   "item.mccourse.peat_brick": "Peat Brick",
 
-  "item.mccourse.metal_detector.no_valuables": "No Valuables Found"
+  "item.mccourse.metal_detector.no_valuables": "No Valuables Found",
+
+  "tooltip.mccourse.metal_detector.tooltip.shift" : "Right click blocks to find valuables",
+  "tooltip.mccourse.metal_detector.tooltip" : "Press §eSHIFT§e for more info"
 }
