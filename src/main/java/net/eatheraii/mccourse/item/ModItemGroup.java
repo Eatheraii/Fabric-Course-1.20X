@@ -34,6 +34,9 @@ public class ModItemGroup {
                         entries.add(ModItems.CAULIFLOWER);
                         entries.add(ModItems.PEAT_BRICK);
 
+                        entries.add(ModBlocks.PINK_GARNET_STAIRS);
+                        entries.add(ModBlocks.PINK_GARNET_SLAB);
+
 /*
 */
                     }).build());
