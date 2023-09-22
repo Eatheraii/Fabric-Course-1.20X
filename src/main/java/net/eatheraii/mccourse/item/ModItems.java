@@ -3,6 +3,8 @@ package net.eatheraii.mccourse.item;
 import net.eatheraii.mccourse.MCCourseMod;
 import net.eatheraii.mccourse.block.ModBlocks;
 import net.eatheraii.mccourse.item.custom.MetalDetectorItem;
+import net.eatheraii.mccourse.item.custom.ModPoisonSwordItem;
+import net.eatheraii.mccourse.item.custom.PaxelItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -32,7 +34,7 @@ public class ModItems {
 
     //TOOLS AND ARMOR SECTION 3
     public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",
-            new SwordItem(ModToolMaterial.PINK_GARNET, 2, 2f, new FabricItemSettings()));
+            new ModPoisonSwordItem(ModToolMaterial.PINK_GARNET, 2, 2f, new FabricItemSettings()));
     public static final Item PINK_GARNET_PICKAXE = registerItem("pink_garnet_pickaxe",
             new PickaxeItem(ModToolMaterial.PINK_GARNET, 1, 1f, new FabricItemSettings()));
     public static final Item PINK_GARNET_SHOVEL = registerItem("pink_garnet_shovel",
@@ -41,6 +43,20 @@ public class ModItems {
             new AxeItem(ModToolMaterial.PINK_GARNET, 6, -2f, new FabricItemSettings()));
     public static final Item PINK_GARNET_HOE = registerItem("pink_garnet_hoe",
             new HoeItem(ModToolMaterial.PINK_GARNET, 0, 0f, new FabricItemSettings()));
+
+    //paxel, multi tool
+    public static final Item PINK_GARNET_PAXEL = registerItem("pink_garnet_paxel",
+            new PaxelItem(ModToolMaterial.PINK_GARNET, 0, 0f, new FabricItemSettings()));
+
+    public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
 
     private static Item registerItem(String name, Item item){
         //registering an item, do it like this
