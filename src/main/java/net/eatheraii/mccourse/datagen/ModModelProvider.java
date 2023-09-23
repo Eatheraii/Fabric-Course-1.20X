@@ -1,6 +1,7 @@
 package net.eatheraii.mccourse.datagen;
 
 import net.eatheraii.mccourse.block.ModBlocks;
+import net.eatheraii.mccourse.block.custom.CauliflowerCropBlock;
 import net.eatheraii.mccourse.block.custom.PinkGarnetLampBlock;
 import net.eatheraii.mccourse.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -39,6 +40,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         registerCustomLamp(blockStateModelGenerator);
 
+        blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+
+
+
     }
 
     private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator) {
@@ -69,7 +74,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem)ModItems.PINK_GARNET_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem)ModItems.PINK_GARNET_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem)ModItems.PINK_GARNET_BOOTS);
-        itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
 
     }
 }

@@ -1,9 +1,15 @@
 package net.eatheraii.mccourse.datagen;
 
 import net.eatheraii.mccourse.block.ModBlocks;
+import net.eatheraii.mccourse.block.custom.CauliflowerCropBlock;
 import net.eatheraii.mccourse.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.CropBlock;
+import net.minecraft.item.Items;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.predicate.StatePredicate;
 
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
 
@@ -34,6 +40,12 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PINK_GARNET_FENCE);
         addDrop(ModBlocks.PINK_GARNET_FENCE_GATE);
         addDrop(ModBlocks.PINK_GARNET_WALL);
+
+        //cauliflower crop
+        BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.CAULIFLOWER_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CauliflowerCropBlock.AGE, 6)); //put the max age or nothing will drop
+        this.addDrop(ModBlocks.CAULIFLOWER_CROP, this.cropDrops(ModBlocks.CAULIFLOWER_CROP, ModItems.CAULIFLOWER, ModItems.CAULIFLOWER_SEEDS, builder2));
+
 
     }
 }

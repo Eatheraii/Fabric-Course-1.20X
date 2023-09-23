@@ -1,6 +1,7 @@
 package net.eatheraii.mccourse.block;
 
 import net.eatheraii.mccourse.MCCourseMod;
+import net.eatheraii.mccourse.block.custom.CauliflowerCropBlock;
 import net.eatheraii.mccourse.block.custom.PinkGarnetLampBlock;
 import net.eatheraii.mccourse.block.custom.SoundBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -66,7 +67,14 @@ public class ModBlocks {
             new PinkGarnetLampBlock(FabricBlockSettings.create().mapColor(MapColor.RAW_IRON_PINK).instrument(Instrument.BASEDRUM)
                     .strength(2).requiresTool().luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)));
 
+    //cauliflower crop
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
+            new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
+    //register block without block item custom method.
+    private static Block registerBlockWithoutBlockItem(String name, Block block){
+        return Registry.register(Registries.BLOCK, new Identifier(MCCourseMod.MOD_ID, name), block);
+    }
 
 
     //register associated item
