@@ -1,5 +1,7 @@
 package net.eatheraii.mccourse.item.custom;
 
+import net.eatheraii.mccourse.item.ModItems;
+import net.eatheraii.mccourse.util.InventoryUtil;
 import net.eatheraii.mccourse.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -10,6 +12,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -45,7 +48,12 @@ public class MetalDetectorItem extends Item {
                     outPutValuableCoordinates(positionClicked.down(i), player, block);
                     foundBlock=true;
 
-                    //Want to break our of for loop
+                    //if inv has data tablet.
+                    if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)){
+                        addNbtDataToDataTablet(player, positionClicked.down(i), block);
+                    }
+
+                    //Want to break out of for loop
                     break;
                 }
             }
@@ -61,6 +69,17 @@ public class MetalDetectorItem extends Item {
 
         //makes the player hand show a swinging option, like it went through.
         return ActionResult.SUCCESS;
+    }
+
+    private void addNbtDataToDataTablet(PlayerEntity player, BlockPos position, Block block) {
+        ItemStack dataTabletStack = player.getInventory().getStack(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET));
+        //returns -1 which will give us a null/out of bounds exception. but that won't happen because of our check in the other method.
+
+        NbtCompound nbtData = new NbtCompound();
+        nbtData.putString("mccourse.last_valuable_found", "Valuable Found: " + block.getName().getString() + " at "
+                + position.getX() + ", " + position.getY() + ", "  + position.getZ() + ", ");
+        //now add to the actual tablet.
+        dataTabletStack.setNbt(nbtData);
     }
 
     @Override

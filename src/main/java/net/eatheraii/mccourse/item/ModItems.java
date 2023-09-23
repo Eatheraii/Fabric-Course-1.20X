@@ -2,10 +2,7 @@ package net.eatheraii.mccourse.item;
 
 import net.eatheraii.mccourse.MCCourseMod;
 import net.eatheraii.mccourse.block.ModBlocks;
-import net.eatheraii.mccourse.item.custom.MetalDetectorItem;
-import net.eatheraii.mccourse.item.custom.ModArmorItem;
-import net.eatheraii.mccourse.item.custom.ModPoisonSwordItem;
-import net.eatheraii.mccourse.item.custom.PaxelItem;
+import net.eatheraii.mccourse.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -57,6 +54,9 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
             new ModArmorItem(ModArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item DATA_TABLET = registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().maxCount(1)));
 
 
     private static Item registerItem(String name, Item item){

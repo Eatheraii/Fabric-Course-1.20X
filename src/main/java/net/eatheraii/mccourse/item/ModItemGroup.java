@@ -58,6 +58,7 @@ public class ModItemGroup {
                         entries.add(ModItems.PINK_GARNET_BOOTS);
 
                         entries.add(ModBlocks.PINK_GARNET_LAMP);
+                        entries.add(ModItems.DATA_TABLET);
 /*
 */
                     }).build());
