@@ -45,5 +45,7 @@
   "item.mccourse.cauliflower_seeds" : "Cauliflower Seeds",
 
   "block.mccourse.petunia" : "Petunia",
-  "block.mccourse.potted_petunia" : "Potted Petunia"
+  "block.mccourse.potted_petunia" : "Potted Petunia",
+
+  "sounds.mccourse.metal_detector_found_ore" : "Metal Detector Found an Ore"
 }

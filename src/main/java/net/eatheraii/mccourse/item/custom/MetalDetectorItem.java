@@ -1,6 +1,7 @@
 package net.eatheraii.mccourse.item.custom;
 
 import net.eatheraii.mccourse.item.ModItems;
+import net.eatheraii.mccourse.sound.ModSounds;
 import net.eatheraii.mccourse.util.InventoryUtil;
 import net.eatheraii.mccourse.util.ModTags;
 import net.minecraft.block.Block;
@@ -13,6 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -53,6 +55,8 @@ public class MetalDetectorItem extends Item {
                         addNbtDataToDataTablet(player, positionClicked.down(i), block);
                     }
 
+                    context.getWorld().playSound(null, positionClicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS, 1f, 1f);
                     //Want to break out of for loop
                     break;
                 }

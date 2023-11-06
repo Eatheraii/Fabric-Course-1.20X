@@ -3,6 +3,7 @@ package net.eatheraii.mccourse;
 import net.eatheraii.mccourse.block.ModBlocks;
 import net.eatheraii.mccourse.item.ModItemGroup;
 import net.eatheraii.mccourse.item.ModItems;
+import net.eatheraii.mccourse.sound.ModSounds;
 import net.eatheraii.mccourse.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
@@ -21,5 +22,7 @@ public class MCCourseMod implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 
 		ModRegistries.registerModStuffs();
+
+		ModSounds.registerSounds();
 	}
 }
