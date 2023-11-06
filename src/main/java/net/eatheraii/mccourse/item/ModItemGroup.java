@@ -60,6 +60,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.PINK_GARNET_LAMP);
                         entries.add(ModItems.DATA_TABLET);
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
+
+                        entries.add(ModBlocks.PETUNIA);
 /*
 */
                     }).build());

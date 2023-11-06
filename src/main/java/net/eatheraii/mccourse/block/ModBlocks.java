@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -70,6 +71,13 @@ public class ModBlocks {
     //cauliflower crop
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+    //flowers
+    public static final Block PETUNIA = registerBlock("petunia",
+            new FlowerBlock(StatusEffects.BAD_OMEN, 4, FabricBlockSettings.copyOf(Blocks.ALLIUM)));
+    public static final Block POTTED_PETUNIA = registerBlockWithoutBlockItem("potted_petunia",
+            new FlowerPotBlock(PETUNIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM)));
+
 
     //register block without block item custom method.
     private static Block registerBlockWithoutBlockItem(String name, Block block){

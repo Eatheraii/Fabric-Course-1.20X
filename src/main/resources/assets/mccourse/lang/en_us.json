@@ -42,5 +42,8 @@
 
   "block.mccourse.pink_garnet_lamp" : "Pink Garnet Lamp Block",
   "item.mccourse.data_tablet" : "Data Tablet",
-  "item.mccourse.cauliflower_seeds" : "Cauliflower Seeds"
+  "item.mccourse.cauliflower_seeds" : "Cauliflower Seeds",
+
+  "block.mccourse.petunia" : "Petunia",
+  "block.mccourse.potted_petunia" : "Potted Petunia"
 }
