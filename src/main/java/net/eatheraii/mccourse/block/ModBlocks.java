@@ -4,6 +4,7 @@ import net.eatheraii.mccourse.MCCourseMod;
 import net.eatheraii.mccourse.block.custom.CauliflowerCropBlock;
 import net.eatheraii.mccourse.block.custom.PinkGarnetLampBlock;
 import net.eatheraii.mccourse.block.custom.SoundBlock;
+import net.eatheraii.mccourse.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -66,7 +67,8 @@ public class ModBlocks {
 
     public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",
             new PinkGarnetLampBlock(FabricBlockSettings.create().mapColor(MapColor.RAW_IRON_PINK).instrument(Instrument.BASEDRUM)
-                    .strength(2).requiresTool().luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)));
+                    .strength(2).requiresTool().luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)
+                    .sounds(ModSounds.PINK_GARNET_LAMP_SOUNDS)));
 
     //cauliflower crop
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
