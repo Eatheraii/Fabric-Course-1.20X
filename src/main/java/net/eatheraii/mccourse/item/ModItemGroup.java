@@ -65,6 +65,8 @@ public class ModItemGroup {
 
                         entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
                         entries.add(ModBlocks.GEM_EMPOWERING_STATION);
+
+                        entries.add(ModItems.RADIATION_STAFF);
 /*
 */
                     }).build());
