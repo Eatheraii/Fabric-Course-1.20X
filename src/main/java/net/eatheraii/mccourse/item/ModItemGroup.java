@@ -64,6 +64,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.PETUNIA);
 
                         entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+                        entries.add(ModBlocks.GEM_EMPOWERING_STATION);
 /*
 */
                     }).build());

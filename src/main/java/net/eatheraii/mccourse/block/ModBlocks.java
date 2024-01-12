@@ -2,6 +2,7 @@ package net.eatheraii.mccourse.block;
 
 import net.eatheraii.mccourse.MCCourseMod;
 import net.eatheraii.mccourse.block.custom.CauliflowerCropBlock;
+import net.eatheraii.mccourse.block.custom.GemEmpoweringStationBlock;
 import net.eatheraii.mccourse.block.custom.PinkGarnetLampBlock;
 import net.eatheraii.mccourse.block.custom.SoundBlock;
 import net.eatheraii.mccourse.sound.ModSounds;
@@ -79,6 +80,12 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.BAD_OMEN, 4, FabricBlockSettings.copyOf(Blocks.ALLIUM)));
     public static final Block POTTED_PETUNIA = registerBlockWithoutBlockItem("potted_petunia",
             new FlowerPotBlock(PETUNIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM)));
+
+    //custom models thing
+    public static final Block GEM_EMPOWERING_STATION = registerBlock("gem_empowering_station",
+            new GemEmpoweringStationBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+
+
 
 
     //register block without block item custom method.
