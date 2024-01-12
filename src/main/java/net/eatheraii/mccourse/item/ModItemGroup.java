@@ -62,6 +62,8 @@ public class ModItemGroup {
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
 
                         entries.add(ModBlocks.PETUNIA);
+
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
 /*
 */
                     }).build());

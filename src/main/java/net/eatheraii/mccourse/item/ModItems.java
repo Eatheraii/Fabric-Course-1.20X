@@ -3,6 +3,7 @@ package net.eatheraii.mccourse.item;
 import net.eatheraii.mccourse.MCCourseMod;
 import net.eatheraii.mccourse.block.ModBlocks;
 import net.eatheraii.mccourse.item.custom.*;
+import net.eatheraii.mccourse.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -60,6 +61,11 @@ public class ModItems {
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new FabricItemSettings()));
+
+    //music disk
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new MusicDiscItem(9, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1)
+                    , 122));
 
 
     private static Item registerItem(String name, Item item){
