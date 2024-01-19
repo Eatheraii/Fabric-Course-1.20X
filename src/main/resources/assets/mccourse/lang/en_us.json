@@ -55,5 +55,8 @@
   "block.mccourse.gem_empowering_station": "Gem Empowering Station",
   "item.mccourse.radiation_staff": "Radiation Staff",
 
-  "item.mccourse.pink_garnet_bow": "Pink Garnet Bow"
+  "item.mccourse.pink_garnet_bow": "Pink Garnet Bow",
+
+  "painting.mccourse.world.title": "World",
+  "painting.mccourse.world.author": "NanoAttack"
 }
