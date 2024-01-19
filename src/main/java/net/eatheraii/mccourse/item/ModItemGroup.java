@@ -67,6 +67,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GEM_EMPOWERING_STATION);
 
                         entries.add(ModItems.RADIATION_STAFF);
+                        entries.add(ModItems.PINK_GARNET_BOW);
 /*
 */
                     }).build());

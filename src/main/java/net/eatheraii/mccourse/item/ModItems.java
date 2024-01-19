@@ -71,6 +71,10 @@ public class ModItems {
     public static final Item RADIATION_STAFF = registerItem("radiation_staff",
             new Item(new FabricItemSettings()));
 
+    //bow
+    public static final Item PINK_GARNET_BOW = registerItem("pink_garnet_bow",
+            new BowItem(new FabricItemSettings().maxDamage(500)));
+
 
     private static Item registerItem(String name, Item item){
         //registering an item, do it like this
