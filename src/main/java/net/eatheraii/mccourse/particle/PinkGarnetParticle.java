@@ -18,7 +18,7 @@ public class PinkGarnetParticle extends SpriteBillboardParticle {
         this.velocityZ = zd;
         //changing the velocity of ou particles ^
 
-        this.scale += 0.75f; //change the scale
+        this.scale *= 0.75f; //change the scale
         this.maxAge = 10; //half a second how long before disappears
         this.setSpriteForAge(spriteSet);
         //^set the sprite for the age and pass our set in.

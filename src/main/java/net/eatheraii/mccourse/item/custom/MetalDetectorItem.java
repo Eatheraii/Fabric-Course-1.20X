@@ -87,7 +87,7 @@ public class MetalDetectorItem extends Item {
 
             world.spawnParticles(new BlockStateParticleEffect(ParticleTypes.BLOCK, blockState),
                     positionClicked.getX() + 0.5d, positionClicked.getY() + 1, positionClicked.getZ() + 0.5d, 2,
-                    Math.cos(i * 18) * 0.25d, 0.15d, Math.sin(i * 18) * 0.25d, 5f);
+                    Math.cos(i * 18) * 0.25d, 0.15d, Math.sin(i * 18) * 0.25d, 1f);
         }
     }
 
