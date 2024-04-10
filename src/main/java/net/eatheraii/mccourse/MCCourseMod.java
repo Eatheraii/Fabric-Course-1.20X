@@ -5,6 +5,7 @@ import net.eatheraii.mccourse.effect.ModEffects;
 import net.eatheraii.mccourse.item.ModItemGroup;
 import net.eatheraii.mccourse.item.ModItems;
 import net.eatheraii.mccourse.painting.ModPaintings;
+import net.eatheraii.mccourse.particle.ModParticles;
 import net.eatheraii.mccourse.potion.ModPotions;
 import net.eatheraii.mccourse.sound.ModSounds;
 import net.eatheraii.mccourse.util.ModLootTableModifiers;
@@ -35,5 +36,7 @@ public class MCCourseMod implements ModInitializer {
 		ModEffects.registerEffects();
 
 		ModPotions.registerPotions();
+
+		ModParticles.registerParticles();
 	}
 }
