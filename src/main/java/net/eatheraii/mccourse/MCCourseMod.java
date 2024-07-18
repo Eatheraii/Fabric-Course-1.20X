@@ -1,12 +1,14 @@
 package net.eatheraii.mccourse;
 
 import net.eatheraii.mccourse.block.ModBlocks;
+import net.eatheraii.mccourse.block.entity.ModBlockEntities;
 import net.eatheraii.mccourse.effect.ModEffects;
 import net.eatheraii.mccourse.item.ModItemGroup;
 import net.eatheraii.mccourse.item.ModItems;
 import net.eatheraii.mccourse.painting.ModPaintings;
 import net.eatheraii.mccourse.particle.ModParticles;
 import net.eatheraii.mccourse.potion.ModPotions;
+import net.eatheraii.mccourse.screen.ModScreenHandlers;
 import net.eatheraii.mccourse.sound.ModSounds;
 import net.eatheraii.mccourse.util.ModLootTableModifiers;
 import net.eatheraii.mccourse.util.ModRegistries;
@@ -38,5 +40,9 @@ public class MCCourseMod implements ModInitializer {
 		ModPotions.registerPotions();
 
 		ModParticles.registerParticles();
+
+		ModBlockEntities.registerBlockEntities();
+
+		ModScreenHandlers.registerScreenHandlers();
 	}
 }
