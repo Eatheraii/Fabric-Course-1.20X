@@ -3,10 +3,14 @@ package net.eatheraii.mccourse;
 import net.eatheraii.mccourse.block.ModBlocks;
 import net.eatheraii.mccourse.particle.ModParticles;
 import net.eatheraii.mccourse.particle.PinkGarnetParticle;
+import net.eatheraii.mccourse.screen.GemEmpoweringScreen;
+import net.eatheraii.mccourse.screen.GemEmpoweringScreenHandler;
+import net.eatheraii.mccourse.screen.ModScreenHandlers;
 import net.eatheraii.mccourse.util.ModModelPredicateProvider;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.particle.ParticleFactory;
 import net.minecraft.client.render.RenderLayer;
 
@@ -20,6 +24,8 @@ public class MCCourseModClient implements ClientModInitializer {
         ModModelPredicateProvider.registerModels();
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.PINK_GARNET_PARTICLE, PinkGarnetParticle.Factory::new);
+
+        HandledScreens.register(ModScreenHandlers.GEM_EMPOWERING_SCREEN_HANDLER, GemEmpoweringScreen::new);
 
     }
 }
