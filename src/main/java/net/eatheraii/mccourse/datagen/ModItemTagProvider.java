@@ -1,5 +1,6 @@
 package net.eatheraii.mccourse.datagen;
 
+import net.eatheraii.mccourse.block.ModBlocks;
 import net.eatheraii.mccourse.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -20,5 +21,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_HELMET, ModItems.PINK_GARNET_CHESTPLATE, ModItems.PINK_GARNET_LEGGINGS, ModItems.PINK_GARNET_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).add(ModItems.BAR_BRAWL_MUSIC_DISC);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN).add(ModBlocks.DRIFTWOOD_LOG.asItem(), ModBlocks.DRIFTWOOD_WOOD.asItem(),
+                ModBlocks.STRIPPED_DRIFTWOOD_LOG.asItem(), ModBlocks.STRIPPED_DRIFTWOOD_WOOD.asItem());
+        getOrCreateTagBuilder(ItemTags.PLANKS).add(ModBlocks.DRIFTWOOD_PLANKS.asItem());
     }
 }

@@ -60,5 +60,13 @@
   "painting.mccourse.world.title": "World",
   "painting.mccourse.world.author": "NanoAttack",
 
-  "effect.mccourse.slimy": "Slimy"
+  "effect.mccourse.slimy": "Slimy",
+
+  "block.mccourse.driftwood_log" : "Driftwood Log",
+  "block.mccourse.driftwood_wood" : "Driftwood Wood",
+  "block.mccourse.stripped_driftwood_log" : "Stripped Driftwood Log",
+  "block.mccourse.stripped_driftwood_wood" : "Stripped Driftwood Wood",
+  "block.mccourse.driftwood_planks" : "Driftwood Planks",
+  "block.mccourse.driftwood_leaves" : "Driftwood Leaves",
+  "block.mccourse.driftwood_sapling" : "Driftwood Sapling"
 }
