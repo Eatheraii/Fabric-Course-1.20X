@@ -6,6 +6,7 @@ import net.eatheraii.mccourse.block.custom.GemEmpoweringStationBlock;
 import net.eatheraii.mccourse.block.custom.PinkGarnetLampBlock;
 import net.eatheraii.mccourse.block.custom.SoundBlock;
 import net.eatheraii.mccourse.sound.ModSounds;
+import net.eatheraii.mccourse.world.tree.DriftwoodSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -101,7 +102,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1f)));
 
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
-            new SaplingBlock(null, FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1f)));
+            new SaplingBlock(new DriftwoodSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1f)));
 
 
 

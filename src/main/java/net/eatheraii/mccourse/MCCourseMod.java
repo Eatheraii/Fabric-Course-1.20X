@@ -12,6 +12,7 @@ import net.eatheraii.mccourse.screen.ModScreenHandlers;
 import net.eatheraii.mccourse.sound.ModSounds;
 import net.eatheraii.mccourse.util.ModLootTableModifiers;
 import net.eatheraii.mccourse.util.ModRegistries;
+import net.eatheraii.mccourse.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -44,5 +45,7 @@ public class MCCourseMod implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 
 		ModScreenHandlers.registerScreenHandlers();
+
+		ModWorldGeneration.generateModWorldGeneration();
 	}
 }
